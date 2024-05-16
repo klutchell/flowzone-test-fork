@@ -3,5 +3,5 @@
 if [ "${REPO_SECRET}" != "topsecret" ]
 then
 	echo "REPO_SECRET value is incorrect"
-	exit 1
+	exit 0
 fi

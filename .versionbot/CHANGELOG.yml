@@ -1,4 +1,28 @@
 - commits:
+    - subject: Remove unused anchors
+      hash: 376cb507b95c9491de5a339ef3f1571ed385ab4c
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+    - subject: Remove restrictions on custom actions
+      hash: 90437cc8270d3f1ffc85585cdc8a72e27cc806a0
+      body: ""
+      footer:
+        Change-type: patch
+        change-type: patch
+        Signed-off-by: Kyle Harding <kyle@balena.io>
+        signed-off-by: Kyle Harding <kyle@balena.io>
+      author: Kyle Harding
+      nested: []
+  version: 12.0.1
+  title: ""
+  date: 2024-05-16T16:03:21.520Z
+- commits:
     - subject: Base versioned commit on the tip of the PR head branch
       hash: 2d9d2a3f5f61eb5e408173d41667f3055221381b
       body: |

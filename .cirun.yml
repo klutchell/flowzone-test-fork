@@ -4,9 +4,8 @@ runners:
   - name: "aws-jammy-amd64-runner"
     cloud: "aws"
     region: us-east-1
-    instance_type: "t2.nano"
-    # (SupportedImages) - Docker - Ubuntu 22.04 x86_64 - 20240520-prod-kntyye27rmyvg
-    machine_image: ami-04c91ae7c2aa2a803
+    instance_type: t3.large
+    machine_image: ami-09027f662486b6ba9
     preemptible: false
     labels:
       - "cirun-aws-runner"
@@ -17,34 +16,33 @@ runners:
   - name: "aws-jammy-arm64-runner"
     cloud: "aws"
     region: us-east-1
-    instance_type: "a1.nano"
-    # Hardened Images Docker Ubuntu 22.04 ARM 1.0.0 1.0.0-prod-soquwxbkzw66c
-    machine_image: ami-0dc388469ae4d21b2
+    instance_type: t4g.large
+    machine_image: ami-0851659c6326013b3
     preemptible: false
     labels:
       - "cirun-aws-arm64-runner"
       - "cirun-aws-jammy-arm64-runner"
 
-  - name: "aws-focal-amd64-runner"
-    cloud: "aws"
-    region: us-east-1
-    instance_type: "t2.nano"
-    # (SupportedImages) - Docker - Ubuntu 20.04 x86_64 - 20240506-b0399345-9904-44ba-bc70-325d965941c6
-    machine_image: ami-02b3ec47b75ecc113
-    preemptible: false
-    labels:
-      - "cirun-aws-focal-runner"
-      - "cirun-aws-focal-amd64-runner"
+  # - name: "aws-focal-amd64-runner"
+  #   cloud: "aws"
+  #   region: us-east-1
+  #   instance_type: t3.large
+  #   # (SupportedImages) - Docker - Ubuntu 20.04 x86_64 - 20240506-b0399345-9904-44ba-bc70-325d965941c6
+  #   machine_image: ami-02b3ec47b75ecc113
+  #   preemptible: false
+  #   labels:
+  #     - "cirun-aws-focal-runner"
+  #     - "cirun-aws-focal-amd64-runner"
 
-  - name: "aws-focal-arm64-runner"
-    cloud: "aws"
-    region: us-east-1
-    instance_type: "a1.nano"
-    # Hardened Images docker hi-h-1.0.5-ubuntu-20-arm-281924a1-6566-40df-8535-f893f67de0ef
-    machine_image: ami-01fbc9a7970210237
-    preemptible: false
-    labels:
-      - "cirun-aws-focal-arm64-runner"
+  # - name: "aws-focal-arm64-runner"
+  #   cloud: "aws"
+  #   region: us-east-1
+  #   instance_type: t4g.large
+  #   # Hardened Images docker hi-h-1.0.5-ubuntu-20-arm-281924a1-6566-40df-8535-f893f67de0ef
+  #   machine_image: ami-01fbc9a7970210237
+  #   preemptible: false
+  #   labels:
+  #     - "cirun-aws-focal-arm64-runner"
 
   # - name: "aws-jammy-amd64-runner"
   #   cloud: "aws"
